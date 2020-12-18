@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="demo.css">
+        <script src="main.js"></script>
+    </head>
+    
+    <body>
+
+        <div class="top">
+            <div class="header"><h1 id="title">WELCOME!</h1></div>
+            <div class="navbar">
+                <div class="topnav" id="myTopnav">
+                    <a href="home.html" >Home</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html" >Contact</a>
+                    <a href="gallery.html">Gallery</a>
+                    <div class="dropdown" class="active">
+                        <button class="dropbtn">Gallery Admin
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="add.html">Add Image</a>
+                            <a href="remove.html">Remove Image</a>
+                            <a href="add.html">Update Image</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contains">
+            <div class="title">
+                <h2>Add Image</h2>
+            </div>
+            <div class="form">
+                <form name="removeImageForm" onsubmit="return remove();">
+
+                    <label for="name">Name</label><span id="namespan"></span>
+                    <input type="text" id="name" name="name" placeholder="Your name..">
+                  
+                    <input type="submit" value="Submit" >
+                  </form>
+            </div>
+        </div>
+    </body>
+
+</html>

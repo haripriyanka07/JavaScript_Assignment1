@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="demo.css">
+        <script src="main.js"></script>
+    </head>
+    
+    <body onload="run()">
+
+        <div class="top">
+            <div class="header"><h1 id="title">WELCOME!</h1></div>
+            <div class="navbar">
+                <div class="topnav" id="myTopnav">
+                    <a href="home.html" >Home</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="gallery.html">Gallery</a>
+                    <div class="dropdown">
+                        <button class="dropbtn"  class="active">Gallery Admin
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="add.html">Add Image</a>
+                            <a href="remove.html">Remove Image</a>
+                            <a href="add.html">Update Image</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contains">
+            <div class="title">
+                <h2 id="title">Add Image</h2>
+            </div>
+            <div class="form">
+                <form name="addImageForm" onsubmit="return add();">
+
+                    <label for="url">URL</label>
+                    <input type="text" id="url" name="url" placeholder="Enter the URL.." required>
+
+                    <label for="name">Name</label><span id="namespan"></span>
+                    <input type="text" id="name" name="name" placeholder="Your name..">
+                  
+                    <label for="info">Information</label>
+                    <textarea rows="4" cols="50" type="text" id="info" value="info" placeholder="Comments.." style="width: 100%;"></textarea> 
+                        
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date">
+
+                    <input type="submit" value="Submit" >
+                  </form>
+            </div>
+        </div>
+    </body>
+
+</html>

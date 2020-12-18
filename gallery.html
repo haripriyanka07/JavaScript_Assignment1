@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="demo.css">
+        <script src="main.js"></script>
+    </head>
+    
+    <body onload="loadImages()">
+        <div class="top">
+            <div class="header"><h1 id="title">WELCOME!</h1></div>
+            <div class="navbar">
+                <div class="topnav" id="myTopnav">
+                    <a href="home.html" >Home</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="gallery.html"class="active">Gallery</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Gallery Admin
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="add.html">Add Image</a>
+                            <a href="remove.html">Remove Image</a>
+                            <a href="add.html">Update Image</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contains" onload="loadImages()">
+            <div class="title">
+                <h2>Gallery</h2>
+            </div>
+            <div class="grid-container" id="image">
+                <img src='https://cdn.icon-icons.com/icons2/2389/PNG/512/python_logo_icon_144958.png'>
+            </div>
+        </div>
+        
+    </body>
+
+</html>
